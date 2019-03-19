@@ -8,11 +8,13 @@ import { MaterialModule } from './material/material.module';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { MatCardModule } from '@angular/material/card';
 import { NasaApiService } from './shared/services/nasa-api.service';
+import { LoweCasePipe } from './shared/pipes/lowe-case.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    LoweCasePipe
   ],
   imports: [
     BrowserModule,

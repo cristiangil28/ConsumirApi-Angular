@@ -4,7 +4,8 @@
     <mat-card-header>
       <img mat-card-avatar src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/NASA_logo.svg/1200px-NASA_logo.svg.png">
       <mat-card-title>{{apod.title}}</mat-card-title>
-      <mat-card-subtitle>{{apod.date}}</mat-card-subtitle>
+      <!--| date es un pipe lo cual permite cambiar la forma en como se muestran los datos-->
+      <mat-card-subtitle>{{apod.date | date:'fullDate' | loweCase}}</mat-card-subtitle>
     </mat-card-header>
     <img mat-card-image [src]="apod.url">
     <mat-card-content>
@@ -16,3 +17,7 @@
     </mat-card-actions>
   </mat-card>
 </div>
+<!--otro pipe que nos va a permitir mostrar un objeto en formato JSON-->
+<!--<pre>
+  {{apod |json }}
+</pre>-->
