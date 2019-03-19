@@ -1,0 +1,10 @@
+.card-container{
+    align-items: center;
+}
+.card-content{
+    width: 600px;
+    margin: 30px auto;
+}
+h3{
+    text-align: center;
+}
