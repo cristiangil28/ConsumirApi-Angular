@@ -1,4 +1,5 @@
-<div class="card-container">
+<!--solo se muestra la información si el objeto existe-->
+<div class="card-container" *ngIf="apod">
   <mat-card class="card-content">
     <h3>Astronomy Picture of the day</h3>
     <mat-card-header>
@@ -15,6 +16,14 @@
       <button mat-button>Like</button>
       <button mat-button >Share</button>
     </mat-card-actions>
+  </mat-card>
+</div>
+<div class="card-container" *ngIf="!apod && !error">
+  <mat-spinner class="card-content"></mat-spinner>
+</div>
+<div *ngIf="error" >
+  <mat-card class="card-content">
+    {{error}}
   </mat-card>
 </div>
 <!--otro pipe que nos va a permitir mostrar un objeto en formato JSON-->
