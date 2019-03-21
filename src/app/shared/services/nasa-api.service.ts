@@ -16,6 +16,9 @@ export class NasaApiService {
 
   getApod():Observable<Apod>{
     //return this.Data;
-    return this.httpClient.get<Apod>(APDO_URL+'?api_key='+API_KEY)
+    //concatenación con el operador +
+    //return this.httpClient.get<Apod>(APDO_URL+'?api_key='+API_KEY)
+    //usando template literals
+    return this.httpClient.get<Apod>(`${APDO_URL}?api_key=${API_KEY}`);
   }
 }
