@@ -10,6 +10,7 @@ import { MatCardModule } from '@angular/material/card';
 import { NasaApiService } from './shared/services/nasa-api.service';
 import { LoweCasePipe } from './shared/pipes/lowe-case.pipe';
 import { HttpClientModule} from '@angular/common/http';
+import { MarsModule } from './mars/mars.module';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { HttpClientModule} from '@angular/common/http';
     MaterialModule,
     BrowserAnimationsModule,
     MatCardModule,
-    HttpClientModule
+    HttpClientModule,
+    MarsModule
   ],
   /* en providers es donde se van a definir las clases que van a ser inyectadas*/
   providers: [NasaApiService],
