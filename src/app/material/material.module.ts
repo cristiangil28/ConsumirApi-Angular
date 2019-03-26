@@ -5,7 +5,7 @@ import { AppComponent } from '../app.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from '../app-routing.module';
 import {MatCardModule} from '@angular/material/card';
-import {MatToolbarModule,MatButtonModule,MatIconModule,MatExpansionModule,MatInputModule,MatListModule, MatProgressSpinnerModule} 
+import {MatToolbarModule,MatButtonModule,MatIconModule,MatExpansionModule,MatInputModule,MatListModule, MatProgressSpinnerModule, MatSelectModule} 
 from '@angular/material';
 
 @NgModule({
@@ -18,13 +18,15 @@ from '@angular/material';
     MatIconModule,
     MatButtonModule,
     MatProgressSpinnerModule,
+    MatSelectModule
     
   ],
   exports:[
     MatToolbarModule,
     MatButtonModule,
     MatIconModule,
-    MatProgressSpinnerModule
+    MatProgressSpinnerModule,
+    MatSelectModule
   ],
 })
 export class MaterialModule { }
