@@ -17,7 +17,8 @@ from '@angular/material';
     MatToolbarModule,
     MatIconModule,
     MatButtonModule,
-    MatProgressSpinnerModule
+    MatProgressSpinnerModule,
+    
   ],
   exports:[
     MatToolbarModule,
